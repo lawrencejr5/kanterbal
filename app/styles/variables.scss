@@ -1,0 +1,45 @@
+// Fonts
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+$primaryFont: poppins;
+
+// Colors
+$primaryColor: #fff9f1;
+$secondaryColor: #ffffff;
+$actionColor: #ce3a20;
+$borderColor: #cbcbcb;
+
+// Mixins
+@mixin backgroundImg() {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin flexCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin gridCenter() {
+  display: grid;
+  place-items: center;
+}
+@mixin defaultBtn(
+  $color: $secondaryColor,
+  $bg: $actionColor,
+  $b-rad: 5px,
+  $f-size: 16px,
+  $f-weight: 600
+) {
+  color: $color;
+  background-color: $bg;
+  font-weight: $f-weight;
+  border: none;
+  outline: none;
+  font-size: $f-size;
+  border-radius: $b-rad;
+  padding: 0.3rem 0.5rem;
+}

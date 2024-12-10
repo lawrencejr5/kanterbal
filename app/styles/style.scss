@@ -1,0 +1,87 @@
+@import "./variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $primaryFont;
+}
+
+.logo {
+  color: $actionColor;
+  font-size: large;
+  font-weight: 600;
+}
+
+.nav-container {
+  width: 100%;
+  padding: 1rem;
+  background-color: $secondaryColor;
+  display: flex;
+  justify-content: space-between;
+
+  .search-container {
+    padding: 0.5rem 1rem;
+    border: 1px solid $borderColor;
+    border-radius: 20px;
+    width: 40%;
+    input {
+      border: none;
+      outline: none;
+    }
+  }
+
+  button {
+    @include defaultBtn;
+  }
+}
+
+.banner-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+
+  .banner {
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(../../public/images/headphones.jpg);
+    border-radius: 10px;
+    padding: 0.5rem;
+    @include backgroundImg;
+
+    .sponsored-text {
+      display: table;
+      color: $secondaryColor;
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
+      padding: 0.3rem;
+      font-size: small;
+      font-weight: 600;
+    }
+
+    .main-content {
+      @include gridCenter;
+      margin-top: 5rem;
+      height: 150px;
+      flex-wrap: wrap;
+
+      p {
+        font-size: 60px;
+        font-weight: 800;
+        color: $secondaryColor;
+      }
+      button {
+        @include defaultBtn($f-size: 20px);
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+}
