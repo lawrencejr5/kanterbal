@@ -18,6 +18,7 @@
   padding: 1rem;
   background-color: $secondaryColor;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 
   .search-container {
@@ -25,15 +26,91 @@
     border: 1px solid $borderColor;
     border-radius: 20px;
     width: 40%;
+    display: flex;
+    align-items: center;
+
     input {
       border: none;
       outline: none;
+      margin-left: 0.5rem;
+    }
+    .icon {
+      color: grey;
     }
   }
 
   button {
     @include defaultBtn;
   }
+}
+
+.item {
+  position: relative;
+  width: 100%;
+  min-width: 250px;
+  height: auto;
+  background-color: $secondaryColor;
+  margin-right: 2rem;
+  border-radius: 5px;
+  box-shadow: 0px 8px 24px rgba(215, 214, 214, 0.61);
+  scroll-snap-align: center;
+
+  .bookmark {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background-color: $secondaryColor;
+    color: $actionColor;
+    font-weight: 600;
+    padding: 0.3rem 0.4rem 0rem 0.4rem;
+    border-radius: 50%;
+  }
+
+  img {
+    object-fit: cover;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+
+  .content {
+    padding: 0.5rem;
+
+    small {
+      color: grey;
+      font-size: 10px;
+    }
+    strong {
+      display: block;
+      font-size: 20px;
+    }
+    section {
+      // position: absolute;
+      margin-top: 1rem;
+      bottom: 0.5rem;
+      width: 100%;
+      @include flexBetween();
+
+      .user {
+        display: flex;
+        align-items: center;
+
+        img {
+          border-radius: 50%;
+          object-fit: cover;
+          margin-right: 0.3rem;
+        }
+      }
+
+      button {
+        @include defaultBtn($f-size: 12px);
+        padding: 0.3rem 0.5rem;
+      }
+    }
+  }
+}
+
+.bg-img {
+  @include backgroundImg;
 }
 
 .banner-container {
@@ -83,5 +160,27 @@
         padding: 0.5rem 1rem;
       }
     }
+  }
+}
+
+.featured-container {
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 100%;
+  height: auto;
+  background-color: $primaryColor;
+
+  h1 {
+    color: $actionColor;
+    border-bottom: 3px solid $actionColor;
+    width: 5px;
+    display: table;
+  }
+  .featured-item-container {
+    margin-top: 1rem;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
   }
 }

@@ -23,6 +23,12 @@ $borderColor: #cbcbcb;
   align-items: center;
   justify-content: center;
 }
+
+@mixin flexBetween() {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 @mixin gridCenter() {
   display: grid;
   place-items: center;
@@ -41,5 +47,7 @@ $borderColor: #cbcbcb;
   outline: none;
   font-size: $f-size;
   border-radius: $b-rad;
-  padding: 0.3rem 0.5rem;
+  padding: 0.3rem 1rem;
+  display: flex;
+  align-items: center;
 }
