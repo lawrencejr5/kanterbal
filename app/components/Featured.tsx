@@ -23,18 +23,6 @@ const Featured = () => {
         <Item />
         <Item />
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </section>
   );
 };
