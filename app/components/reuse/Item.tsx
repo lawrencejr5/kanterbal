@@ -1,8 +1,7 @@
 import React from "react";
-import { FaRegBookmark, FaStackExchange } from "react-icons/fa6";
+import { FaRegBookmark } from "react-icons/fa6";
 import { FaExchangeAlt } from "react-icons/fa";
 
-import Img from "./Img";
 import Button from "./Button";
 
 const Item = () => {
