@@ -4,7 +4,7 @@ import Item from "./reuse/Item";
 const Featured = () => {
   return (
     <section className="featured-container">
-      <h1>Featured</h1>
+      <h1>Featured today</h1>
       <div className="featured-item-container">
         <Item />
         <Item />

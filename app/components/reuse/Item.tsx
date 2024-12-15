@@ -1,6 +1,6 @@
 import React from "react";
-import { FaRegBookmark } from "react-icons/fa6";
-import { FaExchangeAlt } from "react-icons/fa";
+import { FaLocationDot, FaRegBookmark } from "react-icons/fa6";
+import { FaExchangeAlt, FaLocationArrow, FaMap } from "react-icons/fa";
 
 import Button from "./Button";
 
@@ -12,8 +12,11 @@ const Item = () => {
       </div>
       <img height={"150px"} width={"100%"} src={"/images/headphones.jpg"} />
       <div className="content">
-        <small>Asaba, Nigeria</small>
-        <strong>Lawjun VR Headsets Pro 3</strong>
+        <small>
+          <FaLocationDot />
+          Asaba, Nigeria
+        </small>
+        <strong>Lawjun VR Headsets Pro 3 XL</strong>
         <section>
           <div className="user">
             <img
