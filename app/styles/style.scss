@@ -190,12 +190,10 @@
 }
 
 .banner2 {
-  height: 400px;
   width: 100%;
-  background-color: $secondaryColor;
+  background-color: $primaryColor;
   padding: 1rem;
-  margin-bottom: 5rem;
-
+  padding-bottom: 3rem;
   h1 {
     font-size: 30px;
     text-align: center;
@@ -203,7 +201,7 @@
   .card-container {
     @include flexBetween;
     margin-top: 3rem;
-    overflow-x: scroll;
+    overflow-x: auto;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
 
@@ -212,7 +210,9 @@
       width: 100%;
       max-width: 350px;
       min-width: 350px;
-      background-color: $primaryColor;
+      background: $secondaryColor;
+      font-weight: 600;
+      color: $darkColor;
       padding: 1rem;
       border-radius: 25px;
       margin: 0 1rem;
@@ -241,4 +241,43 @@
       }
     }
   }
+}
+
+.faqs {
+  padding: 1rem;
+  padding-bottom: 3rem;
+  h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .faqs-container {
+    @include gridCenter;
+    margin-top: 1.5rem;
+
+    .faqs-card {
+      width: 100%;
+      max-width: 550px;
+      margin-top: 0.5rem;
+      // border: 1px solid $darkColor;
+
+      .question {
+        background-color: $secondaryColor;
+        border: 1px solid $darkColor;
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .answer {
+        display: none;
+        padding: 0.5rem;
+        color: $darkColor;
+      }
+    }
+  }
+}
+
+footer {
+  @include flexCenter;
+  padding: 1rem;
 }
