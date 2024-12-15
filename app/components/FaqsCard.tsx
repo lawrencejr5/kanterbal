@@ -1,6 +1,9 @@
-import React, { FC } from "react";
+"use client";
 
+import React, { FC, useState } from "react";
 import { FaPlus } from "react-icons/fa";
+
+import Button from "./reuse/Button";
 
 interface FaqsCardProps {
   question: string;
@@ -8,10 +11,21 @@ interface FaqsCardProps {
 }
 
 const FaqsCard: FC<FaqsCardProps> = ({ question, answer }) => {
+  const [faqOpen, setFaqOpen] = useState<boolean>(false);
+
+  const openFaq = () => {
+    setFaqOpen((prev) => {
+      return !prev;
+    });
+    console.log(faqOpen);
+  };
   return (
-    <div className="faqs-card">
+    <div className={` ${faqOpen ? "faqs-card opened" : "faqs-card"}`}>
       <div className="question">
-        {question} <FaPlus />
+        {question}{" "}
+        <Button clickFunc={openFaq}>
+          <FaPlus />
+        </Button>
       </div>
       <div className="answer">{answer}</div>
     </div>

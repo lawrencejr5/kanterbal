@@ -52,3 +52,9 @@ $borderColor: #cbcbcb;
   display: flex;
   align-items: center;
 }
+
+@mixin transparentBtn() {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
