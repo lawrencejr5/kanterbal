@@ -1,9 +1,10 @@
 import React, { FC } from "react";
+
 import Button from "./reuse/Button";
 
 interface CardProps {
-  icon: JSX.Element | null;
-  text: string | null;
+  icon: JSX.Element;
+  text: string;
 }
 
 const WhyCard: FC<CardProps> = ({ icon, text }) => {
