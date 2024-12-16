@@ -27,9 +27,9 @@ const Item = () => {
             />
             <small>lawrencejr</small>
           </div>
-          <Button>
+          <button>
             counter&nbsp; <FaExchangeAlt />
-          </Button>
+          </button>
         </section>
       </div>
     </div>

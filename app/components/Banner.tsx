@@ -10,10 +10,10 @@ const Banner = () => {
         <div className="sponsored-text">sponsored</div>
         <div className="main-content">
           <p>Lawjun Vr Headsets Pro 3</p>
-          <Button>
+          <button>
             Counter&nbsp;
             <FaExchangeAlt />
-          </Button>
+          </button>
         </div>
       </div>
     </section>

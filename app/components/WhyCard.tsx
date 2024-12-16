@@ -12,7 +12,7 @@ const WhyCard: FC<CardProps> = ({ icon, text }) => {
     <div className="why-card">
       <div className="icon">{icon}</div>
       <p>{text}</p>
-      <Button>Get started</Button>
+      <button>Get started</button>
     </div>
   );
 };

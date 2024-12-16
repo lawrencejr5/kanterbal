@@ -12,7 +12,7 @@ const Nav = () => {
         <FaSearch className="icon" />
         <input type="text" placeholder="search items" />
       </div>
-      <Button>Sign in</Button>
+      <button>Sign in</button>
     </nav>
   );
 };
