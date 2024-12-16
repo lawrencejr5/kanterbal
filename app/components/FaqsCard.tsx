@@ -1,7 +1,7 @@
 "use client";
 
 import React, { FC, useState } from "react";
-import { FaPlus } from "react-icons/fa";
+import { FaPlus, FaMinus } from "react-icons/fa";
 
 import Button from "./reuse/Button";
 
@@ -24,7 +24,7 @@ const FaqsCard: FC<FaqsCardProps> = ({ question, answer }) => {
       <div className="question">
         {question}{" "}
         <Button clickFunc={openFaq}>
-          <FaPlus />
+          {faqOpen ? <FaMinus /> : <FaPlus />}
         </Button>
       </div>
       <div className="answer">{answer}</div>
