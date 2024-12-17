@@ -51,7 +51,7 @@
   height: auto;
   background-color: $secondaryColor;
   margin-right: 2rem;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0px 8px 24px rgba(215, 214, 214, 0.61);
   scroll-snap-align: center;
 
@@ -85,7 +85,8 @@
     }
     strong {
       display: block;
-      font-size: 20px;
+      font-size: 16px;
+      min-height: 50px;
     }
     section {
       // position: absolute;
@@ -133,7 +134,7 @@
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
       ),
-      url(../../public/images/headphones.jpg);
+      url(../../public/images/items/stuggart-mercedes.jpg);
     border-radius: 10px;
     padding: 0.5rem;
     @include backgroundImg;
@@ -176,6 +177,7 @@
   padding-bottom: 3rem;
   width: 100%;
   height: auto;
+  background-color: $secondaryColor;
 
   h1 {
     color: $actionColor;

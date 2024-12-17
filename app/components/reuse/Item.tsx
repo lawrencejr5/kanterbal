@@ -2,30 +2,39 @@ import React from "react";
 import { FaLocationDot, FaRegBookmark } from "react-icons/fa6";
 import { FaExchangeAlt, FaLocationArrow, FaMap } from "react-icons/fa";
 
-import Button from "./Button";
+interface ItemProps {
+  data: {
+    name: string;
+    location: string;
+    img: string;
+    user: string;
+    userImg: string;
+  };
+}
 
-const Item = () => {
+const Item: React.FC<ItemProps> = ({ data }) => {
+  const { name, location, img, user, userImg } = data;
   return (
     <div className="item">
       <div className="bookmark">
         <FaRegBookmark />
       </div>
-      <img height={"150px"} width={"100%"} src={"/images/headphones.jpg"} />
+      <img height={"150px"} width={"100%"} src={`/images/items/${img}`} />
       <div className="content">
         <small>
           <FaLocationDot />
-          Asaba, Nigeria
+          {location}
         </small>
-        <strong>Lawjun VR Headsets Pro 3 XL</strong>
+        <strong>{name}</strong>
         <section>
           <div className="user">
             <img
-              src={"/images/profile.jpg"}
+              src={`/images/users/${userImg}`}
               width={"15px"}
               height={"15px"}
               alt="nyash"
             />
-            <small>lawrencejr</small>
+            <small>{user}</small>
           </div>
           <button>
             counter&nbsp; <FaExchangeAlt />

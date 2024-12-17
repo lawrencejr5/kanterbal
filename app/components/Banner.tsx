@@ -9,7 +9,7 @@ const Banner = () => {
       <div className="banner">
         <div className="sponsored-text">sponsored</div>
         <div className="main-content">
-          <p>Lawjun Vr Headsets Pro 3</p>
+          <p>Stuggart Mercedes 1993</p>
           <button>
             Counter&nbsp;
             <FaExchangeAlt />
