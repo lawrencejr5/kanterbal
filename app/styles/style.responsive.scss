@@ -1,5 +1,57 @@
 @import "./variables.scss";
 
+@media screen and (max-width: 1150px) {
+  .new-container {
+    .items-container {
+      grid-template-columns: 1fr 1fr 1fr;
+      place-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 873px) {
+  .new-container {
+    .items-container {
+      grid-template-columns: 1fr 1fr;
+      place-items: center;
+
+      .item {
+        margin: 1rem;
+        width: 200px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .new-container {
+    padding: 1rem 0.3rem;
+    h1 {
+      font-size: 16px;
+    }
+    .items-container {
+      grid-template-columns: 1fr 1fr;
+      place-items: center;
+
+      .item {
+        margin: 0.3rem;
+        width: 200px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 534px) {
+  .new-container {
+    .items-container {
+      .item {
+        margin: 0.3rem;
+        width: 200px;
+        min-width: 150px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 450px) {
   .nav-container {
     .search-container {
@@ -47,7 +99,33 @@
   .featured-container {
     margin-top: 0;
     h1 {
-      font-size: 20px;
+      font-size: 16px;
+    }
+  }
+
+  .new-container {
+    .btn-container {
+      margin-top: 1rem;
+      button {
+        font-size: 12px;
+      }
+    }
+    .items-container {
+      .item {
+        margin: 0.3rem 0.3rem;
+        width: 180px;
+        min-width: 150px;
+
+        small {
+          font-size: 8px;
+        }
+        strong {
+          font-size: 12px;
+        }
+        button {
+          font-size: 8px;
+        }
+      }
     }
   }
 
@@ -77,6 +155,29 @@
         p {
           font-size: 20px;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .new-container {
+    .items-container {
+      .item {
+        margin: 1rem 0.3rem;
+        width: 170px;
+        min-width: 150px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 365px) {
+  .new-container {
+    .items-container {
+      .item {
+        margin: 1rem 0.3rem;
+        width: 150px;
+        min-width: 150px;
       }
     }
   }

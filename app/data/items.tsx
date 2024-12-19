@@ -6,6 +6,51 @@ interface Item {
   userImg: string;
 }
 
+export const featured: Item[] = [
+  {
+    name: "D-link router",
+    location: "Warri, Nigeria",
+    img: "d-link router.jpg",
+    user: "asher",
+    userImg: "user-3.png",
+  },
+  {
+    name: "Bungalow house in Asaba",
+    location: "Asaba, Nigeria",
+    img: "house-in-asaba.jpg",
+    user: "dave",
+    userImg: "user-5.png",
+  },
+  {
+    name: "Stuggart Mercedes",
+    location: "Lagos, Nigeria",
+    img: "stuggart-mercedes.jpg",
+    user: "lawrencejr",
+    userImg: "user-6.png",
+  },
+  {
+    name: "Ipad pro with magic keyboard",
+    location: "Fulham, Uk",
+    img: "ipad-pro-with-keyboard.jpg",
+    user: "timmy",
+    userImg: "user-9.png",
+  },
+  {
+    name: "Mircrowave",
+    location: "Ibadan, Nigeria",
+    img: "microwave.jpg",
+    user: "sisyphus",
+    userImg: "user-1.png",
+  },
+  {
+    name: "iPhone 12 pro max",
+    location: "Aba, Abia",
+    img: "iphone-12-pro-max.jpg",
+    user: "derby",
+    userImg: "user-4.png",
+  },
+];
+
 export const items: Item[] = [
   {
     name: "Konica Camera",
@@ -36,19 +81,13 @@ export const items: Item[] = [
     userImg: "user-4.png",
   },
   {
-    name: "Bungalow house in Asaba",
+    name: "Logitech mouse",
     location: "Asaba, Nigeria",
-    img: "house-in-asaba.jpg",
+    img: "logitech-mouse.jpg",
     user: "dave",
     userImg: "user-5.png",
   },
-  {
-    name: "Stuggart Mercedes",
-    location: "Lagos, Nigeria",
-    img: "stuggart-mercedes.jpg",
-    user: "lawrencejr",
-    userImg: "user-6.png",
-  },
+
   {
     name: "Shure headset",
     location: "Lagos, Nigeria",
@@ -63,13 +102,7 @@ export const items: Item[] = [
     user: "mezue",
     userImg: "user-8.png",
   },
-  {
-    name: "Ipad pro with magic keyboard",
-    location: "Fulham, Uk",
-    img: "ipad-pro-with-keyboard.jpg",
-    user: "timmy",
-    userImg: "user-9.png",
-  },
+
   {
     name: "Mircrowave",
     location: "Ibadan, Nigeria",
@@ -97,5 +130,12 @@ export const items: Item[] = [
     img: "iphone-12-pro-max.jpg",
     user: "derby",
     userImg: "user-4.png",
+  },
+  {
+    name: "Airpod pro, white",
+    location: "Asaba, Nigeria",
+    img: "airpod-pro.jpg",
+    user: "sisyphus",
+    userImg: "user-1.png",
   },
 ];

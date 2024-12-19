@@ -5,14 +5,11 @@ import { items } from "../data/items";
 
 const Featured = () => {
   return (
-    <section className="featured-container">
-      <h1>Featured today</h1>
-      <div className="featured-item-container">
-        {items.map((item) => {
-          return <Item data={item} />;
-        })}
-      </div>
-    </section>
+    <div className="featured-item-container">
+      {items.map((item, i) => {
+        return <Item key={i} data={item} />;
+      })}
+    </div>
   );
 };
 

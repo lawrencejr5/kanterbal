@@ -4,7 +4,9 @@ import Featured from "./components/Featured";
 import WhyCard from "./components/WhyCard";
 import FaqsCard from "./components/FaqsCard";
 import Footer from "./components/Footer";
+import Item from "./components/reuse/Item";
 
+import { items, featured } from "./data/items";
 import { faqsData } from "./data/faqs";
 import { whyData } from "./data/why";
 
@@ -13,7 +15,25 @@ export default function Home() {
     <main className="main">
       <Nav />
       <Banner />
-      <Featured />
+      <section className="featured-container">
+        <h1>Featured today</h1>
+        <div className="featured-item-container">
+          {featured.map((item, i) => {
+            return <Item key={i} data={item} />;
+          })}
+        </div>
+      </section>
+      <section className="new-container">
+        <h1>Newest items</h1>
+        <div className="items-container">
+          {items.map((item, i) => {
+            return <Item key={i} data={item} />;
+          })}
+        </div>
+        <div className="btn-container">
+          <button>View more...</button>
+        </div>
+      </section>
       <section className="banner2">
         <h1>Why should I use Kanterbal?</h1>
         <div className="card-container">

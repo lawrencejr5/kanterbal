@@ -13,6 +13,10 @@
   font-weight: 600;
 }
 
+button {
+  @include defaultBtn;
+}
+
 .nav-container {
   width: 100%;
   padding: 1rem;
@@ -33,6 +37,7 @@
       border: none;
       outline: none;
       margin-left: 0.5rem;
+      background-color: transparent;
     }
     .icon {
       color: grey;
@@ -114,10 +119,6 @@
   }
 }
 
-.bg-img {
-  @include backgroundImg;
-}
-
 .banner-container {
   width: 100%;
   height: auto;
@@ -174,18 +175,16 @@
 .featured-container {
   margin-top: 1rem;
   padding: 1rem;
-  padding-bottom: 3rem;
   width: 100%;
-  height: auto;
   background-color: $secondaryColor;
 
   h1 {
     color: $actionColor;
-    text-align: center;
     font-size: 30px;
   }
   .featured-item-container {
     margin-top: 1rem;
+    padding: 1rem;
     display: flex;
     overflow-x: scroll;
     scroll-behavior: smooth;
@@ -193,11 +192,43 @@
   }
 }
 
-.banner2 {
-  width: 100%;
-  background-color: $primaryColor;
+.new-container {
+  margin-top: 1rem;
   padding: 1rem;
   padding-bottom: 3rem;
+  width: 100%;
+  height: auto;
+  background-color: $secondaryColor;
+
+  h1 {
+    color: $actionColor;
+    // text-align: center;
+    margin-left: 0.7rem;
+    font-size: 30px;
+  }
+  .items-container {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+
+    .item {
+      margin: 1rem;
+      width: 200px;
+    }
+  }
+  .btn-container {
+    width: 100%;
+    margin-top: 2rem;
+    @include gridCenter;
+  }
+}
+
+.banner2 {
+  width: 100%;
+  padding: 1rem;
+  padding-bottom: 3rem;
+  background-color: $primaryColor;
   h1 {
     font-size: 30px;
     text-align: center;
