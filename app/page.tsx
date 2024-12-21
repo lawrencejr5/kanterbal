@@ -31,7 +31,7 @@ export default function Home() {
           })}
         </div>
         <div className="btn-container">
-          <button>View more...</button>
+          <button>View more&nbsp;&rarr;</button>
         </div>
       </section>
       <section className="banner2">

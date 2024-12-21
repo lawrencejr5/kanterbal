@@ -8,18 +8,18 @@ interface Item {
 
 export const featured: Item[] = [
   {
-    name: "D-link router",
-    location: "Warri, Nigeria",
-    img: "d-link router.jpg",
-    user: "asher",
-    userImg: "user-3.png",
-  },
-  {
     name: "Bungalow house in Asaba",
     location: "Asaba, Nigeria",
     img: "house-in-asaba.jpg",
     user: "dave",
     userImg: "user-5.png",
+  },
+  {
+    name: "D-link router",
+    location: "Warri, Nigeria",
+    img: "d-link-router.jpg",
+    user: "asher",
+    userImg: "user-3.png",
   },
   {
     name: "Stuggart Mercedes",
@@ -69,7 +69,7 @@ export const items: Item[] = [
   {
     name: "D-link router",
     location: "Warri, Nigeria",
-    img: "d-link router.jpg",
+    img: "d-link-router.jpg",
     user: "asher",
     userImg: "user-3.png",
   },

@@ -126,18 +126,14 @@ button {
   align-items: center;
   justify-content: center;
   padding: 0.5rem;
+  transition: 0.5s;
 
   .banner {
     width: 100%;
     height: 400px;
-    background-image: linear-gradient(
-        to left,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-      ),
-      url(../../public/images/items/stuggart-mercedes.jpg);
     border-radius: 10px;
     padding: 0.5rem;
+    transition: 0.5s;
     @include backgroundImg;
 
     .sponsored-text {
@@ -167,6 +163,23 @@ button {
       button {
         @include defaultBtn($f-size: 20px);
         padding: 0.5rem 1rem;
+      }
+    }
+    .dots-container {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+
+      .dot {
+        width: 15px;
+        height: 15px;
+        background-color: $secondaryColor;
+        border-radius: 50%;
+        margin: 0.3rem;
+        margin-top: 5rem;
+      }
+      .dot.action {
+        background-color: $actionColor;
       }
     }
   }
@@ -220,7 +233,13 @@ button {
   .btn-container {
     width: 100%;
     margin-top: 2rem;
-    @include gridCenter;
+    display: flex;
+    justify-content: end;
+
+    button {
+      @include transparentBtn;
+      color: $actionColor;
+    }
   }
 }
 
@@ -306,6 +325,7 @@ button {
 
         button {
           @include transparentBtn();
+          color: $darkColor;
         }
       }
       .answer {
