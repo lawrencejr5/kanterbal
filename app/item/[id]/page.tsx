@@ -3,6 +3,10 @@ import { FaRegBookmark, FaExchangeAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 
 import BackNav from "../../components/BackNav";
+import Item from "../../components/reuse/Item";
+import Footer from "@/app/components/Footer";
+
+import { featured } from "../../data/items";
 
 interface ItemsPageProps {
   params: {
@@ -48,6 +52,15 @@ const ItemsPage: React.FC<ItemsPageProps> = async ({ params }) => {
           </div>
         </div>
       </section>
+      <section className="related">
+        <h1>Related to this item</h1>
+        <div className="items-container">
+          {featured.slice(0, 4).map((item, i) => {
+            return <Item key={i} data={item} />;
+          })}
+        </div>
+      </section>
+      <Footer />
     </main>
   );
 };
