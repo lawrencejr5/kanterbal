@@ -1,6 +1,6 @@
 import React from "react";
 import { FaLocationDot, FaRegBookmark } from "react-icons/fa6";
-import { FaExchangeAlt, FaLocationArrow, FaMap } from "react-icons/fa";
+import { FaExchangeAlt } from "react-icons/fa";
 
 interface ItemProps {
   data: {

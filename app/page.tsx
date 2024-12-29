@@ -34,7 +34,7 @@ export default function Home() {
           <button>View more&nbsp;&rarr;</button>
         </div>
       </section>
-      <section className="banner2">
+      <section className="why-card-banner">
         <h1>Why should I use Kanterbal?</h1>
         <div className="card-container">
           {whyData.map((data, i) => {

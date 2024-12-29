@@ -49,6 +49,20 @@ button {
   }
 }
 
+.back-nav {
+  width: 100%;
+  padding: 1rem 0;
+
+  button {
+    background-color: transparent;
+  }
+
+  .icon {
+    color: $darkColor;
+    font-size: 35px;
+  }
+}
+
 .item {
   position: relative;
   width: 100%;
@@ -243,7 +257,7 @@ button {
   }
 }
 
-.banner2 {
+.why-card-banner {
   width: 100%;
   padding: 1rem;
   padding-bottom: 3rem;
@@ -341,6 +355,80 @@ button {
       }
       .answer {
         display: block;
+      }
+    }
+  }
+}
+
+.items-page-container {
+  .items-page-layout {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+
+    img {
+      width: 500px;
+      height: auto;
+      max-height: 450px;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+
+    .r-layout {
+      .name {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        p {
+          font-size: 40px;
+          font-weight: 600;
+        }
+        .icon {
+          font-size: 30px;
+        }
+      }
+
+      .user-location {
+        display: flex;
+        .user {
+          display: flex;
+          align-items: center;
+          border: 2px solid $borderColor;
+          width: auto;
+          border-radius: 15px;
+          padding: 0.2rem 0.5rem;
+          background-color: transparent;
+          color: $darkColor;
+          font-weight: 500;
+          margin-top: 0.5rem;
+          img {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+          }
+          span {
+            font-size: 15px;
+          }
+        }
+        .location {
+          @extend .user;
+          margin-left: 1rem;
+        }
+      }
+      .desc {
+        margin-top: 1rem;
+      }
+      .btn-holder {
+        width: 100%;
+        margin: 2rem 0;
+        display: flex;
+        justify-content: center;
+
+        button {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
       }
     }
   }
