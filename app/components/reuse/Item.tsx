@@ -1,9 +1,12 @@
 import React from "react";
+import Link from "next/link";
+
 import { FaLocationDot, FaRegBookmark } from "react-icons/fa6";
 import { FaExchangeAlt } from "react-icons/fa";
 
 interface ItemProps {
   data: {
+    id: string;
     name: string;
     location: string;
     img: string;
@@ -13,9 +16,9 @@ interface ItemProps {
 }
 
 const Item: React.FC<ItemProps> = ({ data }) => {
-  const { name, location, img, user, userImg } = data;
+  const { name, location, img, user, userImg, id } = data;
   return (
-    <div className="item">
+    <Link href={`/item/${id}`} className="item link-component">
       <div className="bookmark">
         <FaRegBookmark />
       </div>
@@ -41,7 +44,7 @@ const Item: React.FC<ItemProps> = ({ data }) => {
           </button>
         </section>
       </div>
-    </div>
+    </Link>
   );
 };
 

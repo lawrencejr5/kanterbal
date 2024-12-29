@@ -6,7 +6,7 @@ import BackNav from "../../components/BackNav";
 import Item from "../../components/reuse/Item";
 import Footer from "@/app/components/Footer";
 
-import { featured } from "../../data/items";
+import { featured, items } from "../../data/items";
 
 interface ItemsPageProps {
   params: {
@@ -14,28 +14,39 @@ interface ItemsPageProps {
   };
 }
 
+interface ItemType {
+  id: string;
+  name: string;
+  location: string;
+  img: string;
+  user: string;
+  userImg: string;
+}
+
 const ItemsPage: React.FC<ItemsPageProps> = async ({ params }) => {
   const id = (await params).id;
+
+  const item = items.find((item) => item.id === id);
 
   return (
     <main className="items-page-container">
       <BackNav />
       <section className="items-page-layout">
-        <img src="/images/items/stuggart-mercedes.jpg" alt="" />
+        <img src={`/images/items/${item?.img}`} alt="" />
         <div className="r-layout">
           <div className="name">
-            <p>Stuggart Mercedes 1946 </p> <FaRegBookmark className="icon" />
+            <p>{item?.name} </p> <FaRegBookmark className="icon" />
           </div>
           <div className="user-location">
             <button className="user">
-              <img src="/images/profile.jpg" alt="" />
+              <img src={`/images/users/${item?.userImg}`} alt="" />
               &nbsp;
-              <span>lawrencejr</span>
+              <span>{item?.user}</span>
             </button>
             <button className="location">
               <FaLocationDot className="icon" />
               &nbsp;
-              <span>Asaba, Nigeria</span>
+              <span>{item?.location}</span>
             </button>
           </div>
           <div className="desc">
@@ -59,6 +70,9 @@ const ItemsPage: React.FC<ItemsPageProps> = async ({ params }) => {
             return <Item key={i} data={item} />;
           })}
         </div>
+      </section>
+      <section className="related">
+        <h1>Items by this user</h1>
       </section>
       <Footer />
     </main>

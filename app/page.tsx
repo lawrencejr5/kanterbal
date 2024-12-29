@@ -26,7 +26,7 @@ export default function Home() {
       <section className="new-container">
         <h1>Newest items</h1>
         <div className="items-container">
-          {items.map((item, i) => {
+          {items.slice(0, 12).map((item, i) => {
             return <Item key={i} data={item} />;
           })}
         </div>

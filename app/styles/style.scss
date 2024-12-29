@@ -17,6 +17,11 @@ button {
   @include defaultBtn;
 }
 
+.link-component {
+  color: $darkColor;
+  text-decoration: none;
+}
+
 .nav-container {
   width: 100%;
   padding: 1rem;
