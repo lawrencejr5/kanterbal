@@ -24,6 +24,45 @@
 }
 
 @media screen and (max-width: 600px) {
+  .back-nav {
+    padding: 1rem 0;
+    button {
+      width: 50px;
+      .icon {
+        font-size: 25px;
+        font-weight: 500;
+      }
+    }
+  }
+  .items-page-container {
+    .items-page-layout {
+      display: block;
+      padding: 0.5rem;
+
+      img {
+        max-height: 300px;
+        border-radius: 15px;
+        object-fit: cover;
+      }
+      .r-layout {
+        width: 95%;
+        margin-left: 0;
+        margin: 0 auto;
+
+        .name {
+          margin: 1rem 0;
+          margin-bottom: 0.5rem;
+          p {
+            font-size: 25px;
+            margin-right: 0.5rem;
+          }
+          .icon {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
   .new-container {
     padding: 1rem 0.3rem;
     h1 {

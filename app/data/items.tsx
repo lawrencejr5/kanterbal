@@ -17,7 +17,7 @@ export const featured: Item[] = [
     userImg: "user-5.png",
   },
   {
-    id: "14",
+    id: "3",
     name: "D-link router",
     location: "Warri, Nigeria",
     img: "d-link-router.jpg",
@@ -25,7 +25,7 @@ export const featured: Item[] = [
     userImg: "user-3.png",
   },
   {
-    id: "15",
+    id: "14",
     name: "Stuggart Mercedes",
     location: "Lagos, Nigeria",
     img: "stuggart-mercedes.jpg",
@@ -33,7 +33,7 @@ export const featured: Item[] = [
     userImg: "user-6.png",
   },
   {
-    id: "16",
+    id: "15",
     name: "Ipad pro with magic keyboard",
     location: "Fulham, Uk",
     img: "ipad-pro-with-keyboard.jpg",
@@ -167,14 +167,6 @@ export const items: Item[] = [
   },
   {
     id: "14",
-    name: "D-link router",
-    location: "Warri, Nigeria",
-    img: "d-link-router.jpg",
-    user: "asher",
-    userImg: "user-3.png",
-  },
-  {
-    id: "15",
     name: "Stuggart Mercedes 1946",
     location: "Lagos, Nigeria",
     img: "stuggart-mercedes.jpg",
@@ -182,7 +174,7 @@ export const items: Item[] = [
     userImg: "user-6.png",
   },
   {
-    id: "16",
+    id: "15",
     name: "Ipad pro with magic keyboard",
     location: "Fulham, Uk",
     img: "ipad-pro-with-keyboard.jpg",

@@ -4,8 +4,10 @@ import { FaRegCopyright } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer>
-      <FaRegCopyright />
-      &nbsp; Lawjun 2024
+      <p>
+        <FaRegCopyright />
+        &nbsp; All rights reserved, Lawjun 2024
+      </p>
     </footer>
   );
 };
