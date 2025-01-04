@@ -9,13 +9,18 @@ import { featured, items } from "../../data/items";
 import UserLocation from "@/app/components/UserLocation";
 
 interface ItemsPageProps {
-  params: {
-    id: string;
-  };
+  params: Promise<{ id: string }>;
 }
 
+export const generateStaticParams = () => {
+  // Define your static params
+  return items.map((item) => {
+    return { id: item.id };
+  });
+};
+
 const ItemsPage: React.FC<ItemsPageProps> = async ({ params }) => {
-  const id = (await params).id;
+  const { id } = await params;
 
   const item = items.find((item) => item.id === id);
   const userItems = items.filter((itm) => itm.user === item?.user);
@@ -68,11 +73,3 @@ const ItemsPage: React.FC<ItemsPageProps> = async ({ params }) => {
 export default ItemsPage;
 
 // Adjusting the function to return the expected structure
-// export async function generateStaticParams() {
-//   // Define your static params
-//   return [
-//     { params: { id: "1" } },
-//     { params: { id: "2" } },
-//     // Add more parameters as needed
-//   ];
-// }
