@@ -93,10 +93,23 @@
 
 @media screen and (max-width: 450px) {
   .nav-container {
+    height: 50px;
+    .logo {
+      .logo-img {
+        width: 150px;
+        margin-top: 0.5rem;
+      }
+    }
     .search-container {
+      width: 140px;
+      padding: 0.3rem;
+      border-radius: 5px;
       input {
         width: 100%;
-        font-size: 12px;
+        font-size: 10px;
+      }
+      .icon {
+        font-size: 10px;
       }
     }
     button {

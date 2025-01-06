@@ -3,17 +3,17 @@
   "name": "Kanterbal",
   "icons": [
     {
-      "src": "imgs/show-imgs/ykflogo3.png",
+      "src": "images/logos/logo-round.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "imgs/show-imgs/ykflogo3.png",
+      "src": "images/logos/logo-round.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "imgs/show-imgs/ykflogo3.png",
+      "src": "images/logos/logo-round.png",
       "type": "image/png",
       "sizes": "512x512"
     }

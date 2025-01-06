@@ -61,19 +61,19 @@ export const featured: Item[] = [
 export const items: Item[] = [
   {
     id: "1",
-    name: "Konica Camera",
-    location: "Asaba, Nigeria",
-    img: "konica-camera.jpg",
-    user: "sisyphus",
-    userImg: "user-1.png",
-  },
-  {
-    id: "2",
     name: "Apple watch",
     location: "Awka, Nigeria",
     img: "apple-watch.jpg",
     user: "vivian",
     userImg: "user-2.png",
+  },
+  {
+    id: "2",
+    name: "Logitech mouse",
+    location: "Asaba, Nigeria",
+    img: "logitech-mouse.jpg",
+    user: "dave",
+    userImg: "user-5.png",
   },
   {
     id: "3",
@@ -93,13 +93,12 @@ export const items: Item[] = [
   },
   {
     id: "5",
-    name: "Logitech mouse",
+    name: "Konica Camera",
     location: "Asaba, Nigeria",
-    img: "logitech-mouse.jpg",
-    user: "dave",
-    userImg: "user-5.png",
+    img: "konica-camera.jpg",
+    user: "sisyphus",
+    userImg: "user-1.png",
   },
-
   {
     id: "6",
     name: "Shure headset",

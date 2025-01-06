@@ -13,7 +13,6 @@ interface ItemsPageProps {
 }
 
 export const generateStaticParams = () => {
-  // Define your static params
   return items.map((item) => {
     return { id: item.id };
   });
@@ -71,5 +70,3 @@ const ItemsPage: React.FC<ItemsPageProps> = async ({ params }) => {
 };
 
 export default ItemsPage;
-
-// Adjusting the function to return the expected structure
