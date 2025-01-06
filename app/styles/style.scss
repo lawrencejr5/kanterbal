@@ -274,29 +274,33 @@ button {
 
 .why-card-banner {
   width: 100%;
-  padding: 1rem;
+  // padding: 1rem;
   padding-bottom: 3rem;
-  background-color: $primaryColor;
+  background-color: $actionColor;
+  background-image: url(../../public/images/logos/logo-main.png);
   h1 {
     font-size: 30px;
     text-align: center;
+    color: $darkColor;
   }
   .card-container {
+    backdrop-filter: blur(50px);
     @include flexBetween;
     margin-top: 3rem;
     overflow-x: auto;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-
     .why-card {
       height: 250px;
       width: 100%;
-      max-width: 350px;
-      min-width: 350px;
+      max-width: 320px;
+      min-width: 320px;
       background: $secondaryColor;
       font-weight: 600;
       color: $darkColor;
       padding: 1rem;
+      border: 2px solid $actionColor;
+
       border-radius: 25px;
       margin: 0 1rem;
       scroll-snap-align: center;
